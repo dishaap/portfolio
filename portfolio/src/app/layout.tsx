@@ -2,17 +2,16 @@ import type { Metadata } from "next";
 import { Syne, Inter } from "next/font/google";
 import "./globals.css";
 
+
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 const syne = Syne({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-syne",
   weight: ["400", "500", "600", "700", "800"],
 });
 
@@ -28,8 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />      
+      </head>
       <body
-        className={`${inter.variable} ${syne.variable} antialiased`}
+        className={`${inter} ${syne}`}
       >
         {children}
       </body>

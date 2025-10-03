@@ -8,24 +8,46 @@
   --font-color: white;
   --alt-font-color: #a49bbc;
   --body-font-size: 16px;
-  --med-font-size: 20px;
-  --title-font-size: 100px;
+  --med-font-size: 1.5rem;
+  --title-font-size: 6rem;
   --text-spacing-small: 0.1vw;
-  --text-spacing-med: 0.5vw;
-  --body-font: var(--font-inter), sans-serif;
-  --title-font: var(--font-syne), sans-serif;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--body-font);
+  --text-spacing-med: 0vw;
+  --line-spacing: 120%;
+  --body-font: 'Inter', sans-serif;
+  --title-font: 'Syne', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --body-font-size: 14px;
+    --med-font-size: 1.25rem;
+    --title-font-size: 6rem;
+    --line-spacing: 100%;
+  }
+}
+
+@media (max-width: 930px) {
+  :root {
+    --body-font-size: 12px;
+    --med-font-size: 1.25rem;
+    --title-font-size: 5rem;
+    --line-spacing: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --body-font-size: 10px;
+    --med-font-size: 1.25rem;
+    --title-font-size: 2.5rem;
+    --line-spacing: 100%;
   }
 }
 
@@ -80,11 +102,10 @@ a {
 
 .navbar {
   display: flex;
-  width: 33vw;
   justify-self: center;
   justify-content: center;
   margin: 2em;
-  z-index: 0;
+  z-index: 8;
   position: fixed;
   border-radius: 26px;
   isolation: isolate;
@@ -104,17 +125,10 @@ a {
   color: var(--color-3);
 }
 
-.title-section {
-  position: fixed;
-  bottom: 0;
-  margin: 0 2em;
-}
-
 .subtitle {
   color: var(--alt-font-color);
   font-size: x-large;
   letter-spacing: var(--text-spacing-med);
-  margin-bottom: 2rem;
   border-bottom: 4px solid transparent;
   border-image: linear-gradient(to right, var(--color-2), var(--color-3)) 1;
   line-height: 0.1em;
@@ -129,22 +143,16 @@ a {
   font-family: var(--title-font);
   font-size: var(--title-font-size);
   font-weight: 800;
-  line-height: 8vw;
+  line-height: var(--line-spacing);
   letter-spacing: var(--text-spacing-med);
 }
 
 .title-alt-1 {
-  background-image: linear-gradient(to right, var(--color-2), var(--color-3));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--color-2);
 }
 
 .title-alt-2 {
-  background-image: linear-gradient(to right, var(--color-1), var(--color-4));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--color-3);
 }
 
 .scroll {
@@ -153,6 +161,4 @@ a {
   color: var(--alt-font-color);
   font-weight: 700;
   letter-spacing: var(--text-spacing-small);
-  float: right;
-  margin: 1rem;
 }
