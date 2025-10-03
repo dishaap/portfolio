@@ -1,10 +1,15 @@
 export default function NavBar() {
     return (
-        <div class="navbar">
-            <NavItem title="about" link="/" />
-            <NavItem title="projects" link="/" />
-            <NavItem title="get in touch" link="/" />
-            <NavItem title="github" link="/" />
+        <div class="liquidGlass-wrapper navbar">
+            <div class="liquidGlass-effect"></div>
+            <div class="liquidGlass-tint"></div>
+            <div class="liquidGlass-shine"></div>
+            <div class="liquidGlass-text">
+                <NavItem title="about" link="/" />
+                <NavItem title="projects" link="/" />
+                <NavItem title="get in touch" link="/" />
+                <NavItem title="github" link="/" />
+            </div>
         </div>
     )
 }
