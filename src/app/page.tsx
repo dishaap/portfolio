@@ -1,9 +1,10 @@
 'use client';
 
-import NavBar from "@/components/NavBar";
-import GlassFilter from "@/components/GlassFilter";
-import AboutSection from "@/components/About";
-import { LetterCollision } from "@/components/LetterCollision";
+import GlassFilter from "../components/GlassFilter";
+import NavBar from "../components/NavBar";
+import { LetterCollision } from '../components/LetterCollision';
+import AboutSection from '../components/About';
+
 
 export default function HomePage() {
   return (
