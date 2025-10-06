@@ -1,15 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-1: rgb(78, 58, 135);
+  --color-2: rgb(159, 136, 211);
+  --color-3: rgb(179, 30, 60);
+  --color-4: #852221;
+  --font-color: white;
+  --alt-font-color: #a49bbc;
+  --body-font-size: 18px;
+  --med-font-size: 1.5rem;
+  --title-font-size: 6rem;
+  --text-spacing-small: 0.1vw;
+  --text-spacing-med: 0.3vw;
+  --line-spacing: 120%;
+  --body-font: 'Inter', sans-serif;
+  --title-font: 'Syne', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +24,190 @@
   }
 }
 
+@media (max-width: 1200px) {
+  :root {
+    --body-font-size: 14px;
+    --med-font-size: 1.25rem;
+    --title-font-size: 6rem;
+    --line-spacing: 100%;
+  }
+}
+
+@media (max-width: 930px) {
+  :root {
+    --body-font-size: 12px;
+    --med-font-size: 1.25rem;
+    --title-font-size: 5rem;
+    --line-spacing: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --body-font-size: 10px;
+    --med-font-size: 1.25rem;
+    --title-font-size: 2.5rem;
+    --line-spacing: 100%;
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  font-family: var(--body-font);
+  color: var(--font-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-2);
+}
+
+h1, h2 {
+  font-family: var(--title-font);
+  font-size: 5rem;
+}
+
+p {
+  letter-spacing: var(--text-spacing-small);
+  line-height: var(--line-spacing);
+}
+
+.liquidGlass-wrapper {
+  overflow: hidden;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+}
+
+.liquidGlass-effect {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  backdrop-filter: blur(4px);
+  filter: url(#glass-distortion);
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 26px;
+}
+
+.liquidGlass-tint {
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  background: rgba(78, 58, 135, 0.25);
+  border-radius: 26px;
+}
+
+.liquidGlass-shine {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: inset 2px 2px 1px 0 rgba(159,  136, 211, 0.5),
+    inset -1px -1px 1px 1px rgba(179, 30, 60, 0.5);
+  border-radius: 26px;
+}
+
+.liquidGlass-text {
+  padding: 0.5rem 0rem;
+  z-index: 4;
+  border-radius: 26px;
+}
+
+.navbar {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  margin: 2em;
+  z-index: 8;
+  position: fixed;
+  border-radius: 26px;
+  isolation: isolate;
+}
+
+
+.navbar-item {
+  color: var(--color-2);
+  padding: 1rem;
+  font-size: var(--body-font-size);
+  font-weight: 500;
+  letter-spacing: var(--text-spacing-small);
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-item:hover {
+  color: var(--color-3);
+}
+
+.subtitle {
+  color: var(--alt-font-color);
+  font-size: x-large;
+  letter-spacing: var(--text-spacing-med);
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(to right, var(--color-2), var(--color-3)) 1;
+  line-height: 0.1em;
+}
+
+.subtitle span {
+  background-color: black;
+  padding-right: 3rem;
+}
+
+.title-text {
+  font-family: var(--title-font);
+  font-size: var(--title-font-size);
+  font-weight: 800;
+  line-height: var(--line-spacing);
+  letter-spacing: var(--text-spacing-med);
+}
+
+.title-alt-1 {
+  color: var(--color-2);
+}
+
+.title-alt-2 {
+  color: var(--color-3);
+}
+
+.scroll {
+  font: var(--body-font);
+  font-size: var(--med-font-size);
+  color: var(--alt-font-color);
+  font-weight: 700;
+  letter-spacing: var(--text-spacing-small);
+}
+
+.about {
+  background: linear-gradient(45deg, var(--color-2), var(--color-1), var(--color-4), var(--color-3));
+  background-size: 300% 300%;
+  background-color: transparent;
+  z-index: 1;
+  animation: gradient 15s ease infinite;
+  border-top-left-radius: 170% 60%;
+  border-top-right-radius: 170% 60%;
+  padding: 35vh 5vw 0 5vw;
+}
+
+.about h2 {
+  font-weight: bold;
+  letter-spacing: var(--text-spacing-med);
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  border-radius: 26px;
+  padding: 1vh 1vw;
 }
