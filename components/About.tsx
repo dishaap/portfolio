@@ -5,7 +5,7 @@ const AboutSection: React.FC = () => (
   <section className="about relative h-[120vh] flex flex-col overflow-hidden">
     <h2 className="text-4xl font-bold text-white">about me</h2>
 
-    <div className="mt-[5vh] grid grid-cols-7 items-start gap-x-[4vh]">
+    <div className="mt-[5vh] grid grid-cols-7 items-start gap-x-[4vh]" id="about">
       <div className="relative col-span-2">
         <AboutPicture />
       </div>

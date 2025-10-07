@@ -15,6 +15,7 @@
   --line-spacing: 120%;
   --body-font: 'Inter', sans-serif;
   --title-font: 'Syne', sans-serif;
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {
