@@ -7,9 +7,9 @@
   --color-4: #852221;
   --font-color: white;
   --alt-font-color: #a49bbc;
-  --body-font-size: 18px;
+  --body-font-size: 1rem;
   --med-font-size: 1.5rem;
-  --title-font-size: 6rem;
+  --title-font-size: 5.5rem;
   --text-spacing-small: 0.1vw;
   --text-spacing-med: 0.3vw;
   --line-spacing: 120%;
@@ -21,33 +21,6 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-  }
-}
-
-@media (max-width: 1200px) {
-  :root {
-    --body-font-size: 14px;
-    --med-font-size: 1.25rem;
-    --title-font-size: 6rem;
-    --line-spacing: 100%;
-  }
-}
-
-@media (max-width: 930px) {
-  :root {
-    --body-font-size: 12px;
-    --med-font-size: 1.25rem;
-    --title-font-size: 5rem;
-    --line-spacing: 90%;
-  }
-}
-
-@media (max-width: 500px) {
-  :root {
-    --body-font-size: 10px;
-    --med-font-size: 1.25rem;
-    --title-font-size: 2.5rem;
-    --line-spacing: 100%;
   }
 }
 
@@ -209,5 +182,24 @@ p {
   display: flex;
   justify-content: center;
   border-radius: 26px;
-  padding: 1vh 1vw;
+}
+
+.about-text {
+  padding: 5vh 3vw;
+  font-weight: 200;
+}
+
+.about-facts {
+  display: flex;
+  justify-content: center;
+  border-radius: 26px;
+  height: fit-content;
+}
+
+.liquidGlass-tint-about {
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  background: #85232163;
+  border-radius: 26px;
 }
