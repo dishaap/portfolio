@@ -3,14 +3,14 @@ import profile from "../public/profile.jpeg";
 
 const AboutSection: React.FC = () => (
   <section className="about relative min-h-[120vh] flex flex-col overflow-hidden">
-    <h2>about me</h2>
 
-    <div className="mt-[10vh] grid grid-cols-6 items-start gap-x-[7vw]" id="about">
+    <div className="mt-[10vh] grid grid-cols-6 items-start gap-x-[5vw]" id="about">
       <div className="col-span-2">
         <div className="relative"><AboutPicture /></div>
         <div className="relative"><AboutFacts /></div>
       </div>
       <div className="relative col-span-4">
+        <h2>about me</h2>
         <AboutDesc />
       </div>
     </div>

@@ -2,7 +2,7 @@
 
 :root {
   --color-1: rgb(255, 111, 0);
-  --color-2: #FFB300;
+  --color-2: rgb(255, 179, 0);
   --color-3: #FB8C00;
   --color-4: rgb(230, 81, 0);
   --font-color: white;
@@ -83,7 +83,7 @@ p {
   z-index: 1;
   position: absolute;
   inset: 0;
-  background: var(--color-4);
+  background: rgb(230, 81, 0, 0.5);
   border-radius: 26px;
 }
 
@@ -93,7 +93,7 @@ p {
   z-index: 3;
   border-radius: 26px;
   overflow: hidden;
-  box-shadow: inset 2px 2px 1px 0 rgba(255, 111, 0, 0.5),
+  box-shadow: inset 2px 2px 1px 0 rgba(255, 179, 0, 0.5),
     inset -1px -1px 1px 1px rgba(230, 81, 0, 0.5);
   border-radius: 26px;
 }
@@ -175,7 +175,7 @@ p {
   animation: gradient 30s ease infinite;
   border-top-left-radius: 170% 60%;
   border-top-right-radius: 170% 60%;
-  padding: 35vh 5vw 0 5vw;
+  padding: 35vh 5vw 20vh 5vw;
 }
 
 .about h2 {
@@ -186,9 +186,8 @@ p {
 }
 
 .about-text {
-  padding: 5vh 3vw;
-  font-size: var(--med-font-size);
   font-weight: 400;
+  width: 80%;
   letter-spacing: var(--text-spacing-small);
 }
 
@@ -221,7 +220,7 @@ p {
   z-index: 1;
   position: absolute;
   inset: 0;
-  background: var(--color-4);
+  background: rgb(230, 81, 0, 0.5);
   border-radius: 0 0 26px 26px;
 }
 
