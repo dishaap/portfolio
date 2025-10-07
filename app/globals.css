@@ -71,7 +71,7 @@ p {
 .liquidGlass-effect {
   position: absolute;
   z-index: 0;
-  inset: 0;
+  inset: -70;
   backdrop-filter: blur(4px);
   filter: url(#glass-distortion);
   overflow: hidden;
@@ -218,6 +218,7 @@ p {
 
 .liquidGlass-tint-about {
   z-index: 1;
+  overflow: hidden;
   position: absolute;
   inset: 0;
   background: rgb(230, 81, 0, 0.5);
@@ -227,8 +228,8 @@ p {
 .liquidGlass-effect-about {
   position: absolute;
   z-index: 0;
-  inset: 0;
-  backdrop-filter: blur(4px);
+  overflow: hidden;
+  backdrop-filter: blur(3px);
   filter: url(#glass-distortion);
   overflow: hidden;
   isolation: isolate;
