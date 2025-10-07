@@ -15,6 +15,7 @@
   --line-spacing: 120%;
   --body-font: 'Inter', sans-serif;
   --title-font: 'Syne', sans-serif;
+  scrollbar-width: none;
   scroll-behavior: smooth;
 }
 
@@ -168,7 +169,7 @@ p {
   background-size: 300% 300%;
   background-color: transparent;
   z-index: 1;
-  animation: gradient 15s ease infinite;
+  animation: gradient 30s ease infinite;
   border-top-left-radius: 170% 60%;
   border-top-right-radius: 170% 60%;
   padding: 35vh 5vw 0 5vw;

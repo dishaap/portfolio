@@ -48,8 +48,8 @@ export const LetterCollision: React.FC = () => {
     }, []);
 
     return (
-        <div ref={ref} className="scroll-smooth">
-            <div className="title-section ml-3 h-[160vh] flex flex-col justify-center">
+        <div ref={ref} className="scroll-smooth h-[120vh]">
+            <div className="title-section ml-3 min-h-screen flex flex-col justify-end">
                 <div className="subtitle -mt-30 mb-8">
                     <span>HI! I AM DISHA :)</span>
                 </div>

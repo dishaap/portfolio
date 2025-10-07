@@ -41,12 +41,12 @@ const AboutFacts: React.FC = () => (
     <div className="liquidGlass-tint-about"></div>
     <div className="liquidGlass-effect"></div>
     <div className="liquidGlass-shine"></div>
-    <div className="liquidGlass-text" style={{ textAlign: 'justify', padding: '2vh 2vw' }}>
-      <p><i className="las la-laptop-code" style={{ fontSize: '1.5rem' }}></i> 2 years as a full stack software dev</p>
+    <div className="liquidGlass-text" style={{ padding: '2vh 2vw' }}>
+      <p><i className="las la-laptop-code" style={{ fontSize: '1.4rem' }}></i> 2 years as a full stack software dev</p>
       <br />
-      <p><i className="las la-graduation-cap" style={{ fontSize: '1.5rem' }}></i> ubc cognitive systems graduate</p>
+      <p><i className="las la-graduation-cap" style={{ fontSize: '1.4rem' }}></i> ubc cognitive systems graduate</p>
       <br />
-      <p><i className="las la-globe" style={{ fontSize: '1.5rem' }}></i>metro vancouver, bc, canada</p>
+      <p><i className="las la-globe" style={{ fontSize: '1.4rem' }}></i> metro vancouver, bc, canada</p>
     </div>
   </div>
 )
