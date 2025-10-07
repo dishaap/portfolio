@@ -20,6 +20,7 @@ const NavBar: React.FC = () => {
       <div className="liquidGlass-tint"></div>
       <div className="liquidGlass-shine"></div>
       <div className="liquidGlass-text">
+        <NavItem title="home" link="#home" />
         <NavItem title="about" link="#about" />
         <NavItem title="projects" link="/" />
         <NavItem title="get in touch" link="/" />
