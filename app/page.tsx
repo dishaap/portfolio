@@ -18,6 +18,7 @@ export default function HomePage() {
       </section>
 
       {/* Hero section with letters */}
+      <div id="home"></div>
       <LetterCollision />
 
       <section className="relative h-[50vh] flex items-center justify-center">
