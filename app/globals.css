@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --color-1: rgb(78, 58, 135);
-  --color-2: rgb(159, 136, 211);
-  --color-3: rgb(179, 30, 60);
-  --color-4: #852221;
+  --color-1: rgb(255, 111, 0);
+  --color-2: #FFB300;
+  --color-3: #FB8C00;
+  --color-4: rgb(230, 81, 0);
   --font-color: white;
-  --alt-font-color: #a49bbc;
+  --alt-font-color: #FFE0B2;
   --body-font-size: 1rem;
   --med-font-size: 1.5rem;
   --title-font-size: 5.5rem;
@@ -83,7 +83,7 @@ p {
   z-index: 1;
   position: absolute;
   inset: 0;
-  background: rgba(78, 58, 135, 0.25);
+  background: var(--color-4);
   border-radius: 26px;
 }
 
@@ -93,8 +93,8 @@ p {
   z-index: 3;
   border-radius: 26px;
   overflow: hidden;
-  box-shadow: inset 2px 2px 1px 0 rgba(159, 136, 211, 0.5),
-    inset -1px -1px 1px 1px rgba(179, 30, 60, 0.5);
+  box-shadow: inset 2px 2px 1px 0 rgba(255, 111, 0, 0.5),
+    inset -1px -1px 1px 1px rgba(230, 81, 0, 0.5);
   border-radius: 26px;
 }
 
@@ -221,7 +221,7 @@ p {
   z-index: 1;
   position: absolute;
   inset: 0;
-  background: #85232163;
+  background: var(--color-4);
   border-radius: 0 0 26px 26px;
 }
 
@@ -242,8 +242,8 @@ p {
   z-index: 3;
   border-radius: 0 0 26px 26px;
   overflow: hidden;
-  box-shadow: inset 2px 2px 1px 0 rgba(159, 136, 211, 0.5),
-    inset -1px -1px 1px 1px rgba(179, 30, 60, 0.5);
+  box-shadow: inset 2px 2px 1px 0 rgba(255, 111, 0, 0.5),
+    inset -1px -1px 1px 1px rgba(230, 81, 0, 0.5);
 }
 
 .liquidGlass-text {
