@@ -24,7 +24,6 @@ const NavBar: React.FC = () => {
         <NavItem title="about" link="#about" />
         <NavItem title="projects" link="/" />
         <NavItem title="get in touch" link="/" />
-        <NavItem title="github" link="/" />
       </div>
     </div>
   );
