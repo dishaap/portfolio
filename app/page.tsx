@@ -21,9 +21,6 @@ export default function HomePage() {
       <div id="home"></div>
       <LetterCollision />
 
-      <section className="relative h-[50vh] flex items-center justify-center">
-      </section>
-
       <AboutSection />
 
     </div>
