@@ -34,9 +34,9 @@ const AboutDesc: React.FC = () => (
       <br />
       <p>i have worked in full-stack and devops during my internship and full-time roles. i have mostly worked with C#/.NET tech stacks professionally but i have dabbled in JavaScript (React/Node), NextJS/TypeScript and Python stacks as well. </p>
       <br />
-      <p>i&apos;m currently looking for full-stack developer roles. i have a deep interest in AI/NLP research-based roles but i'm open to anything that allows me to blend my creativity in design with building functional solutions!</p>
+      <p>i&apos;m currently looking for full-stack developer roles. i have a deep interest in AI/NLP research-based roles but i&apos;m open to anything that allows me to blend my creativity in design with building functional solutions!</p>
       <br />
-      <p>when i&apos;m not coding, i love to read, hike and explore new cafes around the city :) i'm also really into indie video games - my current favourites are hades 2 and silksong.</p>
+      <p>when i&apos;m not coding, i love to read, hike and explore new cafes around the city :) i&apos;m also really into indie video games - my current favourites are hades 2 and silksong.</p>
     </div>
   </div>
 );
