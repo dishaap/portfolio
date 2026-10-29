@@ -35,17 +35,17 @@ export const CONTENT = {
       {
         title: 'GAME DEVELOPER',
         meta: 'CANDLESTICK GAMES • OCT 2025 - MAY 2026',
-        body: LOREM,
+        body: 'Designed game system for an indie RPG game (think Stardew Valley, but for a fairy apothecary). Implemented key features via C# scripts on Unity; setup assets and development tools.',
       },
       {
         title: 'FULL-STACK DEVELOPER',
         meta: 'CULTUREFOUNDRY STUDIOS • MAY 2024 - SEP 2025',
-        body: LOREM_LONG,
+        body: 'Designed and implemented features to improve user experience on Anishinaabemodaa, a language-learning application for Canadian Indigenous languages. Key features I worked on include a custom keyboard for Moose Cree, table-views for Admin section and UI improvements.',
       },
       {
         title: 'B.SC IN COGNITIVE SYSTEMS',
         meta: 'UNIVERSITY OF BRITISH COLUMBIA • SEP 2020 - MAY 2025',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus mollis mauris quis consectetur.',
+        body: 'Specialized in computational linguistics, with research in TTS models for Ojibwe, POS-tagging for Kannada. Participated in Cognitive Systems Society as VP of External Affairs (Science Faculty) and as a Member of the Science Senate.',
       },
     ],
   },
@@ -66,8 +66,8 @@ export const CONTENT = {
   contact: {
     heading: 'GET IN TOUCH!',
     // TODO: replace these placeholders with your real links.
-    email: 'hello@example.com',
-    github: 'https://github.com/your-handle',
-    linkedin: 'https://www.linkedin.com/in/your-handle',
+    email: 'pandurangidisha@gmail.com',
+    github: 'https://github.com/dishaap',
+    linkedin: 'https://www.linkedin.com/in/dishaap',
   },
 };

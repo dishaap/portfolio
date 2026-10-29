@@ -15,7 +15,8 @@
 :root {
   --u: min(calc(100vw / 1440), calc(100vh / 1024));
   --sans: 'Josefin Sans', system-ui, sans-serif;
-  --serif: 'Yeseva One', Georgia, serif;
+  --serif: 'Playfair', Georgia, serif;
+  --serif-weight: 700;
   --placeholder: #d9d9d9;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
